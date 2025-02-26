@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drive&Go - Loja de Carros</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="imagens/projeto-de-logotipo-de-carro-de-aluguel-conceito-arte-vetorial-e-ilustracao_761413-36213.avif">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="imagens/logo.png" alt="Logo Drive&Go">
+            <span>
+                <a href="index.html">Home</a>
+                <a href="empresa.html">Empresa</a>
+                <a href="veiculos.html">Veículos</a>
+                <a href="pecas.html">Peças</a>
+                <a href="formulario.html">Formulario</a>
+                <a href="carrinho.html"><i class="bi bi-cart"></i> Carrinho</a>
+             
+                
+            </span>
+        </nav>
+    </header>
+
+    <!-- Imagem de Destaque -->
+    <section class="imagem_destaque">
+        <img src="imagens/destaque_2.jpg" alt="Carros em destaque Drive&Go">
+        <div class="texto-destaque">
+            <h1>Encontre o carro dos seus sonhos!</h1>
+            <p>Na Drive&Go, oferecemos os melhores veículos com as condições que você merece.</p>
+        </div>
+    </section>
+
+    <!-- Sobre Nós -->
+    <article class="sobre-nos">
+        <h2>Bem-vindo(a) à Drive&Go</h2>
+        <p>
+            Somos uma loja de veículos especializada em oferecer carros novos e seminovos de alta qualidade. 
+            Nosso compromisso é com sua satisfação e segurança na hora de dirigir. Visite-nos e confira nossa 
+            ampla variedade de modelos!
+        </p>
+    </article>
+
+    <!-- Serviços -->
+    <section class="servicos">
+        <h2>Nossos Serviços</h2>
+        <div class="servicos-lista">
+            <div class="servico">
+                <h3>Veículos</h3>
+                <a href="veiculos.html"></a>
+                <p>Os melhores preços e condições para carros novos e seminovos.</p>
+            </div>
+            <div class="servico">
+                <h3>Serviços</h3>
+                <p>Facilidade e agilidade para financiar o seu carro.</p>
+            </div>
+            <div class="servico">
+                <h3>Manutenção</h3>
+                <p>Oferecemos serviços de manutenção e revisão para o seu veículo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Veículos em Destaque -->
+    <section class="veiculos-destaque">
+        <h2>Veículos em Destaque</h2>
+        <div class="veiculos">
+            <div class="veiculo">
+                <img src="imagens/audi a4.jpeg" alt="Carro 1">
+                <button onclick="adicionarAoCarrinho('Audi A4', 150000.00)">Comprar</button>
+                    
+                <p>Audi A4, a partir de R$ 150.000,00</p>
+            </div>
+            <div class="veiculo">
+                <img src="imagens/jetta gli.png" alt="Carro 2">
+                <button onclick="adicionarAoCarrinho('Jetta Gli', 190000.00)">Comprar</button>
+             
+                <p>Jetta Gli, a partir de R$ 190.000,00</p>
+            </div>
+            <div class="veiculo">
+                <img src="imagens/porsche macan.jpg" alt="Carro 3">
+                <button onclick="adicionarAoCarrinho('Porsche Macan', 300000.00)">Comprar</button>
+               
+                <p>Porsche macan, a partir de R$ 300.000,00</p>
+            </div>
+        </div>
+    </section>
+
+    <br> <br> <br> <br> <br> <br> <br>
+   
+<script src="script.js"></script>
+    <footer>
+        <div>
+            &copy; 2025 | Drive&Go | Créditos
+        </div>
+        <div>
+            <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="bi bi-youtube"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://whatsapp.com" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

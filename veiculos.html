@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drive&Go - Veículos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="imagens/projeto-de-logotipo-de-carro-de-aluguel-conceito-arte-vetorial-e-ilustracao_761413-36213.avif">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <img src="imagens/logo.png" alt="Logo Drive&Go">
+            <span>
+                <a href="index.html">Home</a>
+                <a href="empresa.html">Empresa</a>
+                <a href="veiculos.html">Veículos</a>
+                <a href="pecas.html">Peças</a>
+                <a href="formulario.html">Formulario</a>
+                <a href="carrinho.html"><i class="bi bi-cart"></i> Carrinho</a>
+              
+                
+            </span>
+        </nav>
+    </header>
+
+    <!-- Seção de Imagem de Destaque -->
+    <section class="imagem_destaque">
+        <div>
+            <h1>Conheça Nossos Veículos</h1>
+            <p>Os melhores carros, com tecnologia avançada e design futurista.</p>
+        </div>
+    </section>
+
+    <!-- Seção de Veículos em Destaque -->
+    <main class="veiculos-destaque">
+        <h2>Veículos em Destaque</h2>
+        <div class="veiculos">
+            <!-- Veículo 1 -->
+            <div class="veiculo">
+                <img src="imagens/bmw-x1-2023-brasil.webp" alt="BMW">
+                <h3>BMW X1</h3>
+                <p>Velocidade e desempenho em um design arrojado.</p>
+                <p class="preco">R$ 250.000,00</p>
+                <button onclick="adicionarAoCarrinho('BMW X1', 250000.00)">Comprar</button>
+            </div>
+
+            <!-- Veículo 2 -->
+            <div class="veiculo">
+                <img src="imagens/Haval-H6-PHEV19.webp" alt="haval h6">
+                <h3>Haval H6</h3>
+                <p>Conforto e tecnologia para toda a família.</p>
+                <p class="preco">R$ 180.000,00</p>
+                <button onclick="adicionarAoCarrinho('HAVAL H6', 180000.00)">Comprar</button>
+            </div>
+
+            <!-- Veículo 3 -->
+            <div class="veiculo">
+                <img src="imagens/byd.jpg" alt="BYD">
+                <h3>BYD Dolphin</h3>
+                <p>Sustentabilidade e inovação em um único veículo.</p>
+                <p class="preco">R$ 140.000,00</p>
+                <button onclick="adicionarAoCarrinho('BYD Dolphin', 140000.00)">Comprar</button>
+            </div>
+
+            <!-- Veículo 4 -->
+            <div class="veiculo">
+                <img src="imagens/mercedes.webp" alt="Mercedes">
+                <h3>Mercedes CLA 200</h3>
+                <p>Design moderno e tecnologia de ponta.</p>
+                <p class="preco">R$ 220.000,00</p>
+                <button onclick="adicionarAoCarrinho('Mercedes CLA 200', 220000.00)">Comprar</button>
+            </div>
+            <div class="veiculo">
+                <img src="imagens/civic.jpg" alt="Civic">
+                <h3>Civic G10</h3>
+                <p> Honda Civic G10 tem espaço e desempenho.</p>
+                <p class="preco">R$ 119.900,00</p>
+                <button onclick="adicionarAoCarrinho('Civic G10', 119900.00)">Comprar</button>
+            </div>
+            <div class="veiculo">
+                <img src="imagens/corolla.webp" alt="Corolla">
+                <h3>Corolla Hybrid</h3>
+                <p>Híbrido mais barato do Brasil, novo Toyota Corolla .</p>
+                <p class="preco">R$ 158.089,00</p>
+                <button onclick="adicionarAoCarrinho('Corolla Hybrid', 158089.00)">Comprar</button>
+            </div>
+            <div class="veiculo">
+                <img src="imagens/jeep.jpeg" alt="Jeep">
+                <h3>Jeep Commander</h3>
+                <p>Tecnologia e requinte à espera de famílias grandes</p>
+                <p class="preco">R$ 223.190,00</p>
+                <button onclick="adicionarAoCarrinho('Jeep Commander', 223190.00)">Comprar</button>
+            </div>
+            <div class="veiculo">
+                <img src="imagens/sw4.jpg" alt="SW4">
+                <h3>Hillux SW4</h3>
+                <p>A Toyota Hilux SW4 é um veículo que combina força, elegância e tecnologia de ponta.</p>
+                <p class="preco">R$ 239.990,00</p>
+                <button onclick="adicionarAoCarrinho('Hillux SW4', 239900.00)">Comprar</button>
+            </div>
+            <div class="veiculo">
+                <img src="imagens/Ram-Rampage-RT (51).jpg" alt="RAM">
+                <h3>RAM Rampage</h3>
+                <p>Embora conhecida por sua robustez, a Ram Rampage também se destaca pelo conforto interno.</p>
+                <p class="preco">R$ 224.900,00</p>
+                <button onclick="adicionarAoCarrinho('RAM Rampage', 224900.00)">Comprar</button>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+
+    <!-- Rodapé -->
+    <footer>
+        <div>
+            &copy; 2025 | Drive&Go | Créditos
+        </div>
+        <div>
+            <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="bi bi-youtube"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://whatsapp.com" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>

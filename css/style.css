@@ -1,0 +1,766 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root { /* CORES */
+    --azul_escuro: #0a192f;
+    --azul_medio: #112240;
+    --azul_claro: #233554;
+    --ciano: #64ffda;
+    --branco: #e6f1ff;
+    --cinza_claro: #ccd6f6;
+    --sombra: rgba(2, 12, 27, 0.7);
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: var(--azul_escuro);
+    color: var(--branco);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--azul_medio);
+    color: var(--branco);
+    padding: 20px 0;
+    box-shadow: 0 4px 6px var(--sombra);
+}
+
+nav, article, main, footer {
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+nav a {
+    color: var(--branco);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--ciano);
+}
+
+/* Imagem de Destaque */
+.imagem_destaque {
+    position: relative;
+    background: url('imagens/destaque_2.jpg') no-repeat center center/cover;
+    width: 100%;
+    max-width: 1000px;
+    height: 400px;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--branco);
+    text-align: center;
+    box-shadow: 0 4px 6px var(--sombra);
+    overflow: hidden;
+}
+
+.imagem_destaque h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px var(--sombra);
+}
+
+.imagem_destaque p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: 2px 2px 4px var(--sombra);
+}
+
+/* Sobre Nós */
+.sobre-nos {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.sobre-nos h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--ciano);
+}
+
+.sobre-nos p {
+    font-size: 1rem;
+    color: var(--cinza_claro);
+}
+
+/* Serviços */
+.servicos {
+    background: var(--azul_medio);
+    padding: 40px 0;
+    text-align: center;
+}
+
+.servicos h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--ciano);
+}
+
+.servicos-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.servico {
+    background: var(--azul_claro);
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 6px var(--sombra);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.servico h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--ciano);
+}
+
+.servico p {
+    font-size: 1rem;
+    color: var(--cinza_claro);
+}
+
+.servico:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 10px var(--sombra);
+}
+
+/* Veículos em Destaque */
+.veiculos-destaque {
+    padding: 40px 0;
+    background: var(--azul_medio);
+    text-align: center;
+}
+
+.veiculos-destaque h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--ciano);
+}
+
+.veiculos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.veiculo {
+    background: var(--azul_claro);
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 6px var(--sombra);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.veiculo img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.veiculo h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: var(--ciano);
+}
+
+.veiculo p {
+    font-size: 1rem;
+    color: var(--cinza_claro);
+}
+
+.veiculo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 10px var(--sombra);
+}
+
+/* Contato */
+.contato {
+    background: var(--azul_medio);
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contato h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--ciano);
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid var(--azul_claro);
+    border-radius: 5px;
+    background-color: var(--azul_escuro);
+    color: var(--branco);
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--ciano);
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    font-size: 1rem;
+    color: var(--azul_escuro);
+    background-color: var(--ciano);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--branco);
+    color: var(--azul_escuro);
+}
+
+/* Rodapé */
+footer {
+    background: var(--azul_medio);
+    color: var(--branco);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -4px 6px var(--sombra);
+}
+
+footer a {
+    color: var(--branco);
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--ciano);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .servicos-lista, .veiculos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+
+/* Estilos específicos para a página do carrinho */
+/* Estilos gerais */
+.carrinho-container {
+    width: 90%;
+    max-width: 1024px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--azul_medio);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.carrinho-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--ciano);
+    text-align: center;
+    text-shadow: 0 0 10px var(--ciano), 0 0 20px var(--ciano);
+}
+
+/* Estilos para os itens do carrinho */
+.carrinho-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: var(--azul_claro);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carrinho-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.carrinho-item p {
+    font-size: 1rem;
+    color: var(--cinza_claro);
+    margin: 0;
+}
+
+.carrinho-item button {
+    background-color: var(--ciano);
+    color: var(--azul_escuro);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.carrinho-item button:hover {
+    background-color: var(--branco);
+    color: var(--azul_escuro);
+    transform: scale(1.05);
+}
+
+/* Estilos para o total */
+.carrinho-total {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: var(--ciano);
+    text-shadow: 0 0 10px var(--ciano), 0 0 20px var(--ciano);
+}
+
+.carrinho-total span {
+    font-weight: bold;
+}
+
+/* Estilos para as formas de pagamento */
+.formas-pagamento {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: var(--azul_claro);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.formas-pagamento h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--ciano);
+    text-shadow: 0 0 10px var(--ciano), 0 0 20px var(--ciano);
+}
+
+.formas-pagamento label {
+    display: block;
+    margin: 10px 0;
+    font-size: 1rem;
+    color: var(--cinza_claro);
+}
+
+.formas-pagamento input[type="radio"] {
+    margin-right: 10px;
+    accent-color: var(--ciano);
+}
+
+/* Estilos para o botão de finalizar compra */
+.btn-finalizar {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 15px;
+    font-size: 1.1rem;
+    color: var(--azul_escuro);
+    background-color: var(--ciano);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-finalizar:hover {
+    background-color: var(--branco);
+    color: var(--azul_escuro);
+    transform: scale(1.05);
+}
+
+/* Estilos específicos para a página da empresa */
+
+
+.empresa-container {
+    width: 90%;
+    max-width: 1024px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--azul_medio);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px var(--sombra);
+}
+
+.empresa-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--ciano);
+    text-align: center;
+}
+
+.empresa-container h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: var(--ciano);
+}
+
+.empresa-container p {
+    font-size: 1rem;
+    color: var(--cinza_claro);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.empresa-container ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.empresa-container ul li {
+    font-size: 1rem;
+    color: var(--cinza_claro);
+    margin-bottom: 10px;
+}
+
+/* Estilo para a seção de história */
+.historia {
+    margin-bottom: 40px;
+}
+
+/* Estilo para a seção de missão */
+.missao {
+    margin-bottom: 40px;
+}
+
+/* Estilo para a seção de valores */
+.valores {
+    margin-bottom: 40px;
+}
+
+/* Estilo para a seção de equipe */
+.equipe {
+    margin-bottom: 40px;
+}
+
+
+/* Estilos anteriores do formulário (mantenha os que já existem) */
+
+/* Tela de carregamento */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.loading-screen.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Animação do spinner */
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #6a11cb;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Texto de carregamento */
+.loading-screen p {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 500;
+}
+/* Responsividade */
+
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.loading-content {
+    text-align: center;
+    color: white;
+}
+
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.form-section {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--azul_medio);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px var(--sombra);
+}
+
+.form-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--ciano);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-size: 1rem;
+    color: var(--cinza_claro);
+    font-weight: 500;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid var(--azul_claro);
+    border-radius: 5px;
+    background-color: var(--azul_escuro);
+    color: var(--branco);
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: var(--ciano);
+    outline: none;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: var(--cinza_claro);
+    opacity: 0.7;
+}
+
+form button {
+    padding: 10px;
+    font-size: 1rem;
+    color: var(--azul_escuro);
+    background-color: var(--ciano);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: var(--branco);
+    color: var(--azul_escuro);
+}
+
+/* Estilos para mensagens de erro */
+form input:invalid,
+form textarea:invalid {
+    border-color: #ff6b6b;
+}
+
+form input:invalid:focus,
+form textarea:invalid:focus {
+    border-color: #ff6b6b;
+}
+
+form input:invalid::placeholder,
+form textarea:invalid::placeholder {
+    color: #ff6b6b;
+}
+
+/* Estilos para as imagens das peças */
+
+    .peca-imagem {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+
+/* Estilos para os cartões de peças */
+.peca-card {
+    background: var(--azul_claro);
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px; /* Largura fixa para os cartões */
+    text-align: center;
+    box-shadow: 0 4px 6px var(--sombra);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px; /* Espaçamento entre os cartões */
+}
+
+.peca-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 10px var(--sombra);
+}
+
+/* Estilos para a seção de lista de peças */
+.lista-pecas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .empresa-container h1 {
+        font-size: 2rem;
+    }
+
+    .empresa-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .empresa-container p {
+        font-size: 0.9rem;
+    }
+
+    .empresa-container ul li {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .carrinho-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .carrinho-item button {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .peca-card {
+        width: 100%; /* Cartões ocupam 100% da largura em telas menores */
+    }
+
+    .peca-imagem {
+        height: 150px; /* Reduz a altura das imagens em telas menores */
+    }
+}
+
+.botao-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #046dddf1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.botao-link:hover {
+    background-color: var(--ciano);
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peças - Drive&Go</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="imagens/projeto-de-logotipo-de-carro-de-aluguel-conceito-arte-vetorial-e-ilustracao_761413-36213.avif">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="imagens/logo.png" alt="Logo">
+            <span>
+                <a href="index.html">Home</a>
+                <a href="empresa.html">Empresa</a>
+                <a href="veiculos.html">Veículos</a>
+                <a href="pecas.html">Peças</a>
+                <a href="formulario.html">Formulario</a>
+                <a href="carrinho.html"><i class="bi bi-cart"></i> Carrinho</a>
+              
+                
+            </span>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pecas-destaque">
+            <h1>Peças Automotivas</h1>
+            <p>Encontre as melhores peças para o seu veículo com qualidade garantida.</p>
+        </section>
+
+        <section class="lista-pecas">
+            <div class="peca-card">
+                <img src="imagens/breque2-990x660.jpg" alt="Freios" class="peca-imagem">
+                <h2>Freios</h2>
+                <p>Freios de alta performance para garantir a sua segurança!</p>
+                <p class="preco">R$ 800,00</p>
+                <button onclick="adicionarAoCarrinho('Freios', 800.00)">Comprar</button>
+            </div>
+            <div class="peca-card">
+                <img src="imagens/suspensao-automotiva.jpg" alt="Suspensão" class="peca-imagem">
+                <h2>Suspensão</h2>
+                <p>Suspensões resistentes e confiáveis para qualquer terreno!</p>
+                <p class="preco">R$ 1.000,00</p>
+                <button onclick="adicionarAoCarrinho('Suspensão', 1000.00)">Comprar</button>
+            </div>
+            <div class="peca-card">
+                <img src="imagens/filtros-do-carro-saiba-quais-sao-e-quando-trocar.jpg" alt="Filtros" class="peca-imagem">
+                <h2>Filtros</h2>
+                <p>Filtros que prolongam a vida útil do motor e garantem um desempenho superior!</p>
+                <p class="preco">R$ 500,00</p>
+                <button onclick="adicionarAoCarrinho('Filtros', 500.00)">Comprar</button>
+            </div>
+            <div class="peca-card">
+                <img src="imagens/voltande.jpg" alt="Filtros" class="peca-imagem">
+                <h2>Volante</h2>
+                <p>Volante de couro premium: conforto, estilo e durabilidade para seu carro!</p>
+                <p class="preco">R$ 300,00</p>
+                <button onclick="adicionarAoCarrinho('Volante', 300.00)">Comprar</button>
+            </div>
+            <div class="peca-card">
+                <img src="imagens/caixa de cambio.webp" alt="Filtros" class="peca-imagem">
+                <h2> Caixa de Cambio</h2>
+                <p>Cambio Automático Caixa De Marcha Hyundai Creta 2021</p>
+                <p class="preco">R$ 4.899,00</p>
+                <button onclick="adicionarAoCarrinho('Caixa de Cambio', 4899.00)">Comprar</button>
+            </div>
+            <div class="peca-card">
+                <img src="imagens/retrovisor.webp" alt="Filtros" class="peca-imagem">
+                <h2>Retrovisor</h2>
+                <p>Retrovisor Eletrico para Renault Sandero 15/22 Esquerdo Original</p>
+                <p class="preco">R$ 365,66</p>
+                <button onclick="adicionarAoCarrinho('Retrovisor', 365.66)">Comprar</button>
+            </div>
+            <div class="peca-card">
+                <img src="imagens/pneus.webp" alt="Filtros" class="peca-imagem">
+                <h2>Kit 4 Pneus</h2>
+                <p>Kit 4 Pneus Aro 15 185/65R15 Westlake 88H Z108 Cr65772</p>
+                <p class="preco">R$ 1.281,90</p>
+                <button onclick="adicionarAoCarrinho('Kit 4 Pneus', 1281.90)">Comprar</button>
+            </div>
+            <div class="peca-card">
+                <img src="imagens/calotas.webp" alt="Filtros" class="peca-imagem">
+                <h2>Kit 4 Calotas</h2>
+                <p>Kit 4 calotas Aro 15 Europa Encaixe Universal Grid</p>
+                <p class="preco">R$ 149,90</p>
+                <button onclick="adicionarAoCarrinho('Kit 4 Calotas', 149.90)">Comprar</button>
+            </div>
+            <div class="peca-card">
+                <img src="imagens/bancos.webp" alt="Filtros" class="peca-imagem">
+                <h2>Bancos</h2>
+                <p>Bancos Recaro , Gol ,saveiro,voyage, Fusca, Chevette,parati.</p>
+                <p class="preco">R$ 2.999,90</p>
+                <button onclick="adicionarAoCarrinho('Bancos', 2999.90)">Comprar</button>
+            </div>
+            <div class="peca-card">
+                <img src="imagens/velas.webp" alt="Filtros" class="peca-imagem">
+                <h2>Velas</h2>
+                <p>Kit Jogo De 4 Velas Ignição Carros De Diversas Marcas Sp04 Bosch</p>
+                <p class="preco">R$ 71,09</p>
+                <button onclick="adicionarAoCarrinho('Velas', 71.09)">Comprar</button>
+            </div>
+
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <div>&copy; 2025 | Drive&Go | Créditos</div>
+        <div>
+            <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="bi bi-youtube"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://whatsapp.com" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

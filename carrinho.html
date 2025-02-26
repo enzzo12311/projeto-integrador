@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras | Drive&Go</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/x-icon" href="imagens/projeto-de-logotipo-de-carro-de-aluguel-conceito-arte-vetorial-e-ilustracao_761413-36213.avif">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <img src="imagens/logo.png" alt="Logo Drive&Go">
+            <span>
+                <a href="index.html">Home</a>
+                <a href="empresa.html">Empresa</a>
+                <a href="veiculos.html">Veículos</a>
+                <a href="pecas.html">Peças</a>
+                <a href="formulario.html">Formulario</a>
+                <a href="carrinho.html"><i class="bi bi-cart"></i> Carrinho</a>
+              
+                
+            </span>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Seu Carrinho</h2>
+        <div id="carrinho">
+            <!-- Itens do carrinho serão adicionados aqui via JavaScript -->
+        </div>
+        <p class="total">Total: R$ <span id="total">0,00</span></p>
+
+        <h3>Forma de Pagamento</h3>
+        <form id="forma-pagamento">
+            <label>
+                <input type="radio" name="pagamento" value="credito" checked> Cartão de Crédito
+            </label>
+            <label>
+                <input type="radio" name="pagamento" value="debito"> Cartão de Débito
+            </label>
+            <label>
+                <input type="radio" name="pagamento" value="pix"> PIX
+            </label>
+            <label>
+                <input type="radio" name="pagamento" value="boleto"> Boleto Bancário
+            </label>
+        </form>
+
+
+        <button onclick="finalizarCompra()" class="btn-finalizar">Finalizar Compra</button>
+    </main>
+
+   <div id="loadingScreen" class="loading-screen">
+    <div class="loader"></div>
+    <p>Processando sua compra...</p>
+</div>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <div>&copy; 2025 | Drive&Go | Créditos</div>
+        <div>
+            <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="bi bi-youtube"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://whatsapp.com" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        </div>
+    </footer>
+
+   
+
+</body>
+</html>
